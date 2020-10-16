@@ -1,8 +1,10 @@
 package models;
 
+import javax.persistence.*;
+
 @Entity
 public class Vehicule {
-	private int plateNumber;
+	private long plateNumber;
 
 	public Vehicule() {
 		super();
@@ -12,8 +14,12 @@ public class Vehicule {
 	}
 	
 	@Id
-	public int getPlatenbr() {
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	public long getPlatenbr() {
 		return this.plateNumber;
+	}
+	public void setPlatenbr(long plateNumber) {
+		this.plateNumber = plateNumber;
 	}
 
 }
