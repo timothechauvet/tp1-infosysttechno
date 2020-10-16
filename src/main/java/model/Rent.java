@@ -8,6 +8,7 @@ public class Rent {
 	private Date beginRent;
 	private Date endRent;
 	private Vehicule vehicule;
+	private Person person;
 
 	//ID
 	private int id;
@@ -53,8 +54,16 @@ public class Rent {
 	public Vehicule getVehicule() {
 		return vehicule;
 	}
-
 	public void setVehicule(Vehicule vehicule) {
 		this.vehicule = vehicule;
+	}
+
+	@ManyToOne
+	public Person getPerson() {
+		return person;
+	}
+
+	public void setPerson(Person person) {
+		this.person = person;
 	}
 }
