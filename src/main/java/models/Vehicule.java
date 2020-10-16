@@ -9,17 +9,21 @@ public class Vehicule {
 	public Vehicule() {
 		super();
 	}
-	public Vehicule(int platenbr) {
-		this.plateNumber = platenbr;
+	public Vehicule(long plateNumber) {
+		this.plateNumber = plateNumber;
 	}
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	public long getPlatenbr() {
+	public long getPlateNumber() {
 		return this.plateNumber;
 	}
-	public void setPlatenbr(long plateNumber) {
+	public void setPlateNumber(long plateNumber) {
 		this.plateNumber = plateNumber;
 	}
 
+	@Override
+	public String toString() {
+		return "Vehicule [plateNumber=" + plateNumber +"]";
+	}
 }

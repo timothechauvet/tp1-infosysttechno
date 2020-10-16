@@ -4,10 +4,24 @@ import javax.persistence.*;
 
 @Entity
 public class Van extends Vehicule {
-	private long maxWeight;
+	private int maxWeight;
 
-	public Van(long max) {
-		this.maxWeight =max;
+	public int getMaxWeight() {
+		return maxWeight;
+	}
+
+	public void setMaxWeight(int maxWeight) {
+		this.maxWeight = maxWeight;
+	}
+
+	public Van(int max) {
+		super();
+		this.maxWeight = max;
+	}
+
+	public Van() {
+		super();
+		maxWeight = 300;
 	}
 
 }
