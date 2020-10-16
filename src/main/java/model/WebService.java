@@ -20,7 +20,7 @@ public class WebService {
         this.personRepository = personRepository;
     }
 
-    @GetMapping("/persons");
+    @GetMapping("/persons")
     public Iterable<Person> getPersons() {
         return personRepository.findAll();
     }
