@@ -1,7 +1,7 @@
-package model;
+package com.example.jpaProject.web;
 
-import model.Person;
-import model.PersonRepository;
+import com.example.jpaProject.model.Person;
+import com.example.jpaProject.repository.PersonRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;

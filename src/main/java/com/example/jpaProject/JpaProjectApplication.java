@@ -1,5 +1,9 @@
-package model;
+package com.example.jpaProject;
 
+import com.example.jpaProject.model.Car;
+import com.example.jpaProject.model.Person;
+import com.example.jpaProject.repository.PersonRepository;
+import com.example.jpaProject.model.Rent;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;

@@ -1,4 +1,4 @@
-package model;
+package com.example.jpaProject.model;
 
 import javax.persistence.*;
 import java.util.Date;
